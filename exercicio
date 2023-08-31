@@ -1,0 +1,69 @@
+// this is a js file
+// Gabriel Barros
+
+
+/* Exercícios: Isabelly Fernandes*/
+/*Exercício de interpretação:
+1- a. 
+b. null
+c. 11
+d. 0
+e. 
+f. 7
+2- toUppercase(): SUBI NO ÔNIBUS EM MARROCOS.
+replaceAll("a", "i"): sui no ônibus em Mirrocos.
+length:  26
+
+B . Exercícios de escrita de código
+*/
+//1-
+let nomeDoUsuario = prompt("Digite seu nome:");
+let emailDoUsuario = prompt("Digite seu email:");
+console.log("O e-mail"  +emailDoUsuario+  "foi cadastrado com sucesso. Seja bem-vinda(o),"
++nomeDoUsuario+  "!");
+
+/*2-Faça um programa que contenha um array com 5 das suas comidas
+preferidas, armazenado em uma variável. Em seguida, siga os passos:
+a) Imprima no console o array completo
+b) Imprima no console a mensagem "Essas são as minhas comidas
+preferidas: ", seguida por cada uma das comidas, uma embaixo da
+outra.
+c) Aqui vai um desafio: pergunte ao usuário uma comida preferida.
+Troque a segunda comida da sua lista pela inserida pelo usuário.
+Imprima no console a nova lista*/
+const comidasFavs = ["Strogonoff", "Petit gateau", "ovo mexido", "pizza", "hamburguer"];
+console.log(comidasFavs)
+console.log("Essas são minhas comidas favoritas:");
+console.log(comidasFavs[1]);
+console.log(comidasFavs[2]);
+console.log(comidasFavs[3]);
+console.log(comidasFavs[4]);
+console.log(comidasFavs[5]);
+//c 
+comidasFavs[1] = prompt("Qual sua comida favorita?");
+console.log(comidasFavs);
+
+/*3-Faça um programa, seguindo os passos:
+a) Crie um array vazio e guarde-o em uma variável, chamada
+listaDeTarefas
+b) Pergunte ao usuário 3 tarefas que ele precise realizar no dia e
+armazene-as, uma por uma, no array
+c) Imprima o array no console
+d) Peça ao usuário que digite o índice de uma tarefa que ele já realizou:
+0, 1 ou 2
+Strings e Arrays 4
+e) Remova da lista o item de índice que o usuário escolheu.
+f) Imprima o array no console.*/
+
+let listaDeTarefas = [];
+console.log("Escreva 3 tarefas do seu dia:");
+let prmeiraTarefa = prompt ("Primeira tarefa:"); 
+listaDeTarefas.push(prmeiraTarefa);
+let segundaTarefa = prompt ("Segunda tarefa:");
+listaDeTarefas.push(segundaTarefa);
+let terceiraTafera = prompt ("Terceira tarefa:");
+listaDeTarefas.push(terceiraTafera);
+console.log(listaDeTarefas);
+let usuário = Number (prompt("digite o índice de uma tarefa que já realizou"));
+listaDeTarefas.splice(usuário,1);
+console.log(listaDeTarefas);
